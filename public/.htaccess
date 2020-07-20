@@ -1,0 +1,39 @@
+AuthUserFile /home/uazgard/.htpasswd
+AuthType Basic
+AuthName "Password-protected Area"
+Require valid-user
+
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /api/
+
+    RewriteRule ^event$ Api_AboutEvent.php [L]
+    RewriteRule ^event/(.*)$ Api_AboutEvent.php?id=$1 [L]
+
+    RewriteRule ^countries$ Api_Countries.php [L]
+    RewriteRule ^countries/(.*)$ Api_Countries.php?id=$1 [L]
+
+    RewriteRule ^cities$ Api_Cities.php [L]
+    RewriteRule ^cities/(.*)$ Api_Cities.php?id=$1 [L]
+
+    RewriteRule ^discipline$ Api_Discipline.php [L]
+    RewriteRule ^discipline/(.*)$ Api_Discipline.php?id=$1 [L]
+
+    RewriteRule ^group$ Api_Group.php [L]
+    RewriteRule ^group/(.*)$ Api_Group.php?id=$1 [L]
+
+    RewriteRule ^subject$ Api_Subject.php [L]
+    RewriteRule ^subject/(.*)$ Api_Subject.php?id=$1 [L]
+
+    RewriteRule ^theme$ Api_Theme.php [L]
+    RewriteRule ^theme/(.*)$ Api_Theme.php?id=$1 [L]
+
+    RewriteRule ^user$ Api_User.php [L]
+    RewriteRule ^user/(.*)$ Api_User.php?id=$1 [L]
+
+</IfModule>
+
+
+
+
