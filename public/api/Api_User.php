@@ -130,6 +130,9 @@
         } else if( $num > 0 ){
             extract($stmt->fetch(PDO::FETCH_ASSOC));
             echo json_encode(array(
+                "message"=>"Success",
+                "status" => true,
+                "data" => array(
                     "id" => $id,
                     "Name" => $Name,
                     "Surname" => $Surname,
@@ -144,12 +147,15 @@
                     "ShopInfo" => $ShopInfo,
                     "id_City" => $id_City,
                     "id_Country" => $id_Country
-                ), JSON_UNESCAPED_UNICODE
+                )), JSON_UNESCAPED_UNICODE
             );
         }
         else{
             http_response_code(404);
-            echo json_encode(array("message" => "User was not found"), JSON_UNESCAPED_UNICODE);
+            echo json_encode(array(
+                "message" => "User was not found",
+                "status" => false,
+            ), JSON_UNESCAPED_UNICODE);
         }
     }
     /**

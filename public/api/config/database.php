@@ -3,8 +3,8 @@
     class Database{
         private $host = "localhost";
         private $db_name = "stuhelp";
-        private $username = "connectUser";
-        private $password = "hardPassword";
+        private $username = "g925622346135234";
+        private $password = "lACzs2AF3xek9jC";
         private $conn;
 
         public function getConnection(){

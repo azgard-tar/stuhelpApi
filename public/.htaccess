@@ -1,7 +1,7 @@
-AuthUserFile /home/uazgard/.htpasswd
+AuthUserFile /etc/apache2/.htpasswd
 AuthType Basic
 AuthName "Password-protected Area"
-Require valid-user
+Require user ua88005553535
 
 
 <IfModule mod_rewrite.c>

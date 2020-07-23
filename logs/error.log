@@ -236,3 +236,19 @@
 [Tue Jul 14 12:29:55.726138 2020] [auth_basic:error] [pid 152144] [client 80.252.246.94:50834] AH01618: user alex not found: /
 [Tue Jul 14 12:42:17.873977 2020] [auth_basic:error] [pid 152452] [client 80.252.246.94:63805] AH01618: user alex not found: /
 [Thu Jul 16 11:44:07.966920 2020] [auth_basic:error] [pid 165976] [client 80.252.246.94:60822] AH01618: user 'website not found: /countries
+[Wed Jul 22 16:56:37.657469 2020] [php7:error] [pid 8257] [client 109.104.184.183:53660] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /var/www/api.stuhelp.site/public/api/general_api.php:37\nStack trace:\n#0 /var/www/api.stuhelp.site/public/api/objects/User.php(18): general->read()\n#1 /var/www/api.stuhelp.site/public/api/Api_User.php(102): User->read()\n#2 {main}\n  thrown in /var/www/api.stuhelp.site/public/api/general_api.php on line 37
+[Thu Jul 23 08:26:47.019433 2020] [auth_basic:error] [pid 18859] [client 80.252.246.94:64901] AH01618: user alex not found: /
+[Thu Jul 23 09:07:47.018375 2020] [php7:error] [pid 20310] [client 45.79.251.40:58572] script '/var/www/api.stuhelp.site/public/index.php' not found or unable to stat
+[Thu Jul 23 09:08:10.946577 2020] [php7:error] [pid 25861] [client 45.79.251.40:58576] script '/var/www/api.stuhelp.site/public/index.php' not found or unable to stat
+[Thu Jul 23 09:09:37.587515 2020] [php7:error] [pid 20310] [client 45.79.251.40:58586] script '/var/www/api.stuhelp.site/public/index.php' not found or unable to stat
+[Thu Jul 23 09:10:00.967564 2020] [php7:error] [pid 26109] [client 45.79.251.40:58588] script '/var/www/api.stuhelp.site/public/index.php' not found or unable to stat
+[Thu Jul 23 09:11:29.449818 2020] [php7:error] [pid 26113] [client 45.79.251.40:58592] script '/var/www/api.stuhelp.site/public/index.php' not found or unable to stat
+[Thu Jul 23 09:11:41.337863 2020] [php7:error] [pid 26350] [client 45.79.251.40:58672] script '/var/www/api.stuhelp.site/public/index.php' not found or unable to stat
+[Thu Jul 23 09:12:26.565221 2020] [php7:error] [pid 26110] [client 45.79.251.40:58678] script '/var/www/api.stuhelp.site/public/index.php' not found or unable to stat
+[Thu Jul 23 09:42:25.706690 2020] [php7:error] [pid 26349] [client 45.79.251.40:58726] script '/var/www/api.stuhelp.site/public/index.php' not found or unable to stat
+[Thu Jul 23 09:42:27.897601 2020] [php7:error] [pid 26354] [client 45.79.251.40:58728] script '/var/www/api.stuhelp.site/public/index.php' not found or unable to stat
+[Thu Jul 23 10:38:18.288028 2020] [php7:error] [pid 26110] [client 45.79.251.40:58862] PHP Parse error:  syntax error, unexpected 'array' (T_ARRAY), expecting ')' in /var/www/api.stuhelp.site/public/api/Api_User.php on line 132
+[Thu Jul 23 10:38:23.869077 2020] [php7:error] [pid 26112] [client 45.79.251.40:58864] PHP Parse error:  syntax error, unexpected ':', expecting ')' in /var/www/api.stuhelp.site/public/api/Api_User.php on line 132
+[Thu Jul 23 10:46:48.182805 2020] [php7:error] [pid 26354] [client 45.79.251.40:58890] script '/var/www/api.stuhelp.site/public/index.php' not found or unable to stat
+[Thu Jul 23 10:47:21.782048 2020] [php7:error] [pid 27757] [client 45.79.251.40:58900] script '/var/www/api.stuhelp.site/public/index.php' not found or unable to stat
+[Thu Jul 23 10:48:53.148301 2020] [php7:error] [pid 27761] [client 45.79.251.40:58916] PHP Fatal error:  Uncaught Error: Call to a member function rowCount() on string in /var/www/api.stuhelp.site/public/api/Api_User.php:103\nStack trace:\n#0 {main}\n  thrown in /var/www/api.stuhelp.site/public/api/Api_User.php on line 103
