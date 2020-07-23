@@ -126,13 +126,16 @@
             }
 
             http_response_code(200);
-            echo json_encode($user_arr, JSON_UNESCAPED_UNICODE);
+            echo json_encode(array(
+                "message"=>"Success",
+                "status" => true,
+                "users" => $user_arr ), JSON_UNESCAPED_UNICODE);
         } else if( $num > 0 ){
             extract($stmt->fetch(PDO::FETCH_ASSOC));
             echo json_encode(array(
                 "message"=>"Success",
                 "status" => true,
-                "data" => array(
+                "user" => array(
                     "id" => $id,
                     "Name" => $Name,
                     "Surname" => $Surname,

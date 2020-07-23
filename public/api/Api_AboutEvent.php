@@ -119,7 +119,7 @@
             echo json_encode($event_arr, JSON_UNESCAPED_UNICODE);
         } else if( $num > 0 ){
             extract($stmt->fetch(PDO::FETCH_ASSOC));
-            echo json_encode(array(
+            echo json_encode(array(array(
                 "id" => $id,
                 "EvWhen" => $EvWhen,
                 "id_User" => $id_User,
@@ -131,7 +131,7 @@
                 "Questions" => $Questions,
                 "Homework" => $Homework,
                 "WhenDoHW" => $WhenDoHW
-                ), JSON_UNESCAPED_UNICODE
+                )), JSON_UNESCAPED_UNICODE
             );
         }
         else{
